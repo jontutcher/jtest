@@ -1,7 +1,9 @@
 try:
     from setuptools import setup
 except ImportError:
-    from distutils.core import setuptools   # use distutils if we don't have setuptools
+    from distutils.core import setup   # use distutils if we don't have setuptools
+
+
 
 setup(
     name = "jtest",
