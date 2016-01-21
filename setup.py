@@ -1,4 +1,8 @@
-from setuptools import setup
+try:
+    from setuptools import setup
+except ImportError:
+    from distutils.core import setuptools   # use distutils if we don't have setuptools
+
 setup(
     name = "jtest",
     version = "0.1.0",
